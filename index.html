@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Paige Simpson | Marketing Portfolio</title>
+
+  <style>
+
+    :root {
+      --navy: #17324d;
+      --blue: #2f6f9f;
+      --light: #f5f8fb;
+      --white: #ffffff;
+      --text: #263238;
+      --muted: #607080;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--light);
+      line-height: 1.6;
+    }
+
+
+    /* HEADER */
+
+    header {
+      background: var(--navy);
+      color: white;
+      padding: 55px 20px;
+      text-align: center;
+    }
+
+    .headshot {
+      width: 190px;
+      height: 190px;
+      object-fit: cover;
+      object-position: center 25%;
+      border-radius: 50%;
+      border: 5px solid white;
+      margin-bottom: 18px;
+      box-shadow: 0 5px 18px rgba(0,0,0,.25);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(2.4rem, 6vw, 4rem);
+      letter-spacing: 1px;
+    }
+
+    header h2 {
+      margin: 8px 0 18px;
+      font-size: 1.25rem;
+      font-weight: normal;
+      color: #dceaf5;
+    }
+
+    .statement {
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+    }
+
+
+    /* NAVIGATION */
+
+    nav {
+      background: white;
+      padding: 14px 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,.08);
+      z-index: 10;
+    }
+
+    nav a {
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 16px;
+    }
+
+    nav a:hover {
+      color: var(--blue);
+    }
+
+
+    /* MAIN PAGE */
+
+    main {
+      max-width: 1050px;
+      margin: auto;
+      padding: 44px 20px 70px;
+    }
+
+    section {
+      margin-bottom: 52px;
+    }
+
+    h2.section-title {
+      color: var(--navy);
+      font-size: 2rem;
+      margin-bottom: 18px;
+      border-bottom: 3px solid var(--blue);
+      padding-bottom: 8px;
+    }
+
+
+    /* ABOUT */
+
+    .about {
+      background: white;
+      border-radius: 14px;
+      padding: 25px;
+      box-shadow: 0 5px 18px rgba(23,50,77,.08);
+    }
+
+
+    /* SKILLS */
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 15px;
+    }
+
+    .skill {
+      background: white;
+      border-left: 5px solid var(--blue);
+      padding: 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      box-shadow: 0 4px 14px rgba(23,50,77,.07);
+    }
+
+
+    /* PROJECTS */
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 25px;
+      box-shadow: 0 5px 18px rgba(23,50,77,.08);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--navy);
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e8f1f8;
+      color: var(--navy);
+      border-radius: 20px;
+      padding: 4px 10px;
+      margin: 3px 3px 3px 0;
+      font-size: .86rem;
+    }
+
+
+    /* CONTACT */
+
+    .contact {
+      text-align: center;
+      background: var(--navy);
+      color: white;
+      border-radius: 14px;
+      padding: 30px 20px;
+    }
+
+    .contact a {
+      color: #dceaf5;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 20px;
+      font-size: .9rem;
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+  <img
+    src="headshot.jpg"
+    alt="Paige Simpson professional headshot"
+    class="headshot"
+  >
+
+  <h1>Paige Simpson</h1>
+
+  <h2>
+    Marketing Student | Aspiring CPG Marketing Professional
+  </h2>
+
+  <p class="statement">
+    I am a marketing student and quick learner who is determined
+    to build my knowledge and experience in the consumer packaged
+    goods (CPG) industry.
+  </p>
+
+</header>
+
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+  <a href="#about">About</a>
+
+  <a href="#skills">Skills</a>
+
+  <a href="#projects">Projects</a>
+
+  <a href="#contact">Contact</a>
+
+</nav>
+
+
+
+<main>
+
+
+<!-- ABOUT ME -->
+
+<section id="about">
+
+  <h2 class="section-title">
+    About Me
+  </h2>
+
+  <div class="about">
+
+    <p>
+      I am a marketing student at Rutgers Business School with
+      an interest in consumer behavior, data-driven decision
+      making, and the CPG industry.
+    </p>
+
+    <p>
+      Through academic, internship, and leadership experiences,
+      I have strengthened my ability to analyze information,
+      collaborate with teams, communicate ideas, and turn
+      insights into clear recommendations.
+    </p>
+
+    <p>
+      I am eager to continue learning and applying these skills
+      in future marketing opportunities.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+  <h2 class="section-title">
+    Skills
+  </h2>
+
+  <div class="skills">
+
+    <div class="skill">
+      Microsoft Excel
+    </div>
+
+    <div class="skill">
+      Data Analysis
+    </div>
+
+    <div class="skill">
+      Marketing
+    </div>
+
+    <div class="skill">
+      Marketing Analytics
+    </div>
+
+    <div class="skill">
+      Consumer & Retail Insights
+    </div>
+
+    <div class="skill">
+      CPG Industry Knowledge
+    </div>
+
+    <div class="skill">
+      Data Visualization
+    </div>
+
+    <div class="skill">
+      Microsoft PowerPoint
+    </div>
+
+    <div class="skill">
+      Presentation Skills
+    </div>
+
+    <div class="skill">
+      Business Communication
+    </div>
+
+    <div class="skill">
+      Teamwork & Collaboration
+    </div>
+
+    <div class="skill">
+      Leadership
+    </div>
+
+    <div class="skill">
+      Project Management
+    </div>
+
+    <div class="skill">
+      Organization & Time Management
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+  <h2 class="section-title">
+    Featured Projects
+  </h2>
+
+  <div class="projects">
+
+
+    <!-- WAKEFERN PROJECT -->
+
+    <article class="card">
+
+      <h3>
+        Wakefern Final Project
+      </h3>
+
+      <p>
+        Completed a final internship project focused on Wakefern
+        using retail and consumer data to identify insights and
+        develop business recommendations.
+      </p>
+
+      <p>
+        Presented the findings to senior leaders and members of
+        the Analytics & Insights team.
+      </p>
+
+      <span class="tag">
+        Data Analysis
+      </span>
+
+      <span class="tag">
+        Retail Insights
+      </span>
+
+      <span class="tag">
+        Presentation
+      </span>
+
+    </article>
+
+
+
+    <!-- EGGLAND'S BEST PROJECT -->
+
+    <article class="card">
+
+      <h3>
+        Eggland's Best Project
+      </h3>
+
+      <p>
+        Supported an Eggland's Best project by analyzing relevant
+        data and developing concise insights for client-facing
+        presentations and reporting.
+      </p>
+
+      <p>
+        The project strengthened my experience translating data
+        into clear and actionable marketing takeaways.
+      </p>
+
+      <span class="tag">
+        CPG
+      </span>
+
+      <span class="tag">
+        Client Reporting
+      </span>
+
+      <span class="tag">
+        Marketing Analytics
+      </span>
+
+    </article>
+
+
+
+    <!-- EXECUTIVE SUMMARIES -->
+
+    <article class="card">
+
+      <h3>
+        Executive Summary Projects
+      </h3>
+
+      <p>
+        Created executive summaries that organized key findings,
+        trends, and recommendations into an easy-to-understand
+        format for internal and client presentations.
+      </p>
+
+      <p>
+        These projects strengthened my skills in business
+        communication and data storytelling.
+      </p>
+
+      <span class="tag">
+        Business Communication
+      </span>
+
+      <span class="tag">
+        Insights
+      </span>
+
+      <span class="tag">
+        Storytelling
+      </span>
+
+    </article>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+  <h2 class="section-title">
+    Contact
+  </h2>
+
+  <div class="contact">
+
+    <h3>
+      Let's Connect
+    </h3>
+
+    <p>
+      I am interested in opportunities to continue developing
+      my marketing, analytics, and CPG industry experience.
+    </p>
+
+    <p>
+      Email:
+      <a href="mailto:paigeelizabeth1108@gmail.com">
+        paigeelizabeth1108@gmail.com
+      </a>
+    </p>
+
+    <p>
+      LinkedIn:
+      <a
+        href="https://www.linkedin.com/in/paige-simpson-a4228b385"
+        target="_blank"
+        rel="noopener"
+      >
+        linkedin.com/in/paige-simpson-a4228b385
+      </a>
+    </p>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  &copy; 2026 Paige Simpson. Marketing Portfolio.
+
+</footer>
+
+
+</body>
+
+</html>
